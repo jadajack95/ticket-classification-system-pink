@@ -1,0 +1,121 @@
+text,category,priority
+Cannot open archived emails,Email,High
+Email signature disappeared,Email,Medium
+Emails are stuck in the outbox,Email,High
+Spam filter blocking legitimate messages,Email,Medium
+Cannot open archived emails,Email,Medium
+Outlook keeps asking for my password,Email,High
+Emails are stuck in the outbox,Email,Low
+Mailbox is full even after deleting emails,Email,High
+Outlook crashes when opening attachments,Email,Medium
+Calendar invites not syncing,Email,Medium
+Spam filter blocking legitimate messages,Email,Medium
+Outlook keeps asking for my password,Email,Low
+Shared mailbox not showing up,Email,Medium
+Outlook keeps asking for my password,Email,High
+Outlook keeps asking for my password,Email,High
+Mailbox is full even after deleting emails,Email,High
+Emails are stuck in the outbox,Email,High
+Cannot send email from mobile device,Email,Low
+Mailbox is full even after deleting emails,Email,Medium
+Mailbox is full even after deleting emails,Email,Medium
+VPN disconnects every few minutes,Network,Medium
+Internet is extremely slow on office laptop,Network,High
+Internet is extremely slow on office laptop,Network,Medium
+Latency spikes during video calls,Network,Medium
+Wi-Fi drops when moving between rooms,Network,Medium
+Internet is extremely slow on office laptop,Network,Medium
+Internet is extremely slow on office laptop,Network,Medium
+Internet is extremely slow on office laptop,Network,Medium
+VPN connects but cannot access shared drives,Network,Medium
+Company portal loads very slowly,Network,Medium
+Remote desktop connection fails,Network,Low
+Company portal loads very slowly,Network,Medium
+Wi-Fi drops when moving between rooms,Network,Low
+Remote desktop connection fails,Network,Low
+Network drive keeps disconnecting,Network,Medium
+Internet is extremely slow on office laptop,Network,Medium
+Latency spikes during video calls,Network,Medium
+Cannot connect to office Wi-Fi,Network,Medium
+Company portal loads very slowly,Network,Low
+Cannot connect to office Wi-Fi,Network,Medium
+Fan is extremely loud,Hardware,Medium
+Laptop overheats during normal use,Hardware,High
+Laptop will not power on,Hardware,Medium
+Fan is extremely loud,Hardware,Medium
+Docking station not working,Hardware,Medium
+Fan is extremely loud,Hardware,Medium
+Laptop overheats during normal use,Hardware,High
+Battery drains very quickly,Hardware,High
+Battery drains very quickly,Hardware,High
+Docking station not working,Hardware,Medium
+Battery drains very quickly,Hardware,High
+Second monitor not detected,Hardware,Medium
+Battery drains very quickly,Hardware,Medium
+USB ports not recognizing devices,Hardware,High
+Laptop overheats during normal use,Hardware,Medium
+Mouse pointer jumps randomly,Hardware,Medium
+Second monitor not detected,Hardware,High
+Keyboard typing incorrect characters,Hardware,High
+Keyboard typing incorrect characters,Hardware,Medium
+Laptop will not power on,Hardware,High
+Cannot install company software,Software,High
+Teams crashes during meetings,Software,Medium
+Program opens but immediately closes,Software,Medium
+Application interface appears blank,Software,Medium
+Application interface appears blank,Software,Low
+Error message appears when launching program,Software,Medium
+Software running extremely slow,Software,Medium
+Teams crashes during meetings,Software,Medium
+Application interface appears blank,Software,Medium
+Excel freezes when opening large files,Software,High
+Software update stuck at 50 percent,Software,Low
+Application fails to start after update,Software,Low
+Cannot install company software,Software,High
+Cannot install company software,Software,Low
+Adobe Acrobat asking for license again,Software,Low
+Excel freezes when opening large files,Software,High
+Software running extremely slow,Software,Medium
+Application interface appears blank,Software,High
+Software update stuck at 50 percent,Software,Medium
+Adobe Acrobat asking for license again,Software,Medium
+Access denied to project folder,Access,High
+Cannot log into company portal,Access,High
+Cannot log into company portal,Access,Low
+New employee cannot access onboarding tools,Access,Low
+MFA code not being accepted,Access,Medium
+Permission error when opening database,Access,Medium
+Cannot log into VPN account,Access,Medium
+Cannot log into VPN account,Access,Medium
+New employee cannot access onboarding tools,Access,Low
+Need access to HR shared drive,Access,High
+Password reset link not working,Access,High
+New employee cannot access onboarding tools,Access,Medium
+Account locked after too many login attempts,Access,High
+Account locked after too many login attempts,Access,Medium
+MFA code not being accepted,Access,Medium
+Need access to HR shared drive,Access,Medium
+Account permissions removed unexpectedly,Access,Low
+Password reset link not working,Access,Low
+Cannot log into VPN account,Access,Low
+Cannot log into VPN account,Access,Medium
+Color printing not working,Printer,Medium
+Cannot connect to printer from laptop,Printer,Low
+Color printing not working,Printer,Medium
+Printer prints blank pages,Printer,Low
+Printer prints blank pages,Printer,High
+Print jobs stuck in queue,Printer,Low
+Paper tray not recognized,Printer,High
+Paper tray not recognized,Printer,High
+Printer prints blank pages,Printer,High
+Printer not detected on network,Printer,Medium
+Color printing not working,Printer,High
+Printer not detected on network,Printer,Medium
+Print jobs stuck in queue,Printer,Medium
+Printer prints blank pages,Printer,Medium
+Printer making loud grinding noise,Printer,Medium
+Paper tray not recognized,Printer,High
+Printer shows offline status,Printer,High
+Unable to scan to email,Printer,Low
+Paper tray not recognized,Printer,High
+Paper tray not recognized,Printer,Medium
