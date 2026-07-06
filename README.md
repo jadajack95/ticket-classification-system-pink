@@ -44,14 +44,29 @@ The training pipeline also creates a separate priority-classification model. The
 7. A user submits a ticket description through the browser interface.
 8. The application returns the predicted category and a confidence score.
 
+## 📊 Model Results
+
+The category classifier achieved **100% accuracy on the project’s held-out test split**.
+
+The priority classifier achieved **50% accuracy**, which reflects the challenge of predicting urgency from ticket text alone. Ticket priority often depends on business impact, outage scope, user role, and other context not included in a short written request.
+
+> This project is intended as a portfolio demonstration of machine-learning-assisted ticket triage, not a production-ready help desk routing system.
+
+## 🖥️ Application Preview
+
+The FastAPI web interface accepts a help desk ticket description and returns a predicted category with a confidence score.
+
+![Help Desk Ticket Classifier preview](images/app-preview.png)
+
 ## 🌸 Future Improvements
-- Add the trained model files and complete application folder structure to the repository
-- Add a requirements.txt file for easier setup
 - Expand the web app to display both category and priority predictions
 - Add model evaluation results and accuracy metrics
 - Improve dataset size and class balance
 - Add a more polished user interface
 - Deploy the application as a hosted web service
+- Improve low-confidence predictions by expanding the dataset with more varied ticket wording
+- Add a confidence threshold so uncertain predictions can be flagged for manual review
+- Add priority prediction to the web interface
 
 ## 👩🏽‍💻 Author
 
