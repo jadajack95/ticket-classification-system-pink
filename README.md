@@ -17,6 +17,23 @@ This project processes help desk ticket text and predicts the appropriate catego
 - Real-time prediction capability
 - Structured Python backend logic
 
+## 🛠️ Technologies Used
+- Python
+- pandas
+- scikit-learn
+- FastAPI
+
+## ⚙️ How It Works
+1. Ticket data is cleaned and prepared.
+2. A classification model is trained.
+3. New ticket input is processed.
+4. The system predicts the ticket category.
+
+## 🌸 Future Improvements
+- Deploy as a web API
+- Improve model accuracy
+- Add a user interface for interaction
+
 ## 📁 Project Structure
 
 ```text
