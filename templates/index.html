@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Desk Ticket Classifier</title>
+
+  <style>
+    :root {
+      --pink: #f06fa9;
+      --light-pink: #fff1f7;
+      --dark: #2f2730;
+      --muted: #6f6470;
+      --border: #f2c8da;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #fff7fb 0%, #f5f7ff 100%);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 34px;
+      box-shadow: 0 12px 32px rgba(85, 40, 66, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .subtitle {
+      margin: 0 auto 28px;
+      max-width: 620px;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font: inherit;
+      resize: vertical;
+    }
+
+    textarea:focus {
+      outline: 3px solid rgba(240, 111, 169, 0.2);
+      border-color: var(--pink);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 18px;
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 18px;
+      background: var(--pink);
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      filter: brightness(0.95);
+    }
+
+    .result {
+      margin-top: 28px;
+      padding: 22px;
+      background: var(--light-pink);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .result h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+
+    .label {
+      font-weight: 700;
+    }
+
+    .ticket-text {
+      margin-top: 16px;
+      padding: 14px;
+      background: white;
+      border-left: 4px solid var(--pink);
+      border-radius: 8px;
+      color: var(--muted);
+      white-space: pre-wrap;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>🎟️ Help Desk Ticket Classifier</h1>
+
+    <p class="subtitle">
+      Enter an IT support request to receive a machine-learning-based category prediction.
+    </p>
+
+    <form action="/predict" method="post">
+      <label for="ticket_text">Describe the support issue</label>
+
+      <textarea
+        id="ticket_text"
+        name="ticket_text"
+        placeholder="Example: My laptop cannot connect to the office Wi-Fi after the latest update."
+        required
+      >{{ ticket_text }}</textarea>
+
+      <button type="submit">Classify Ticket</button>
+    </form>
+
+    {% if prediction %}
+    <section class="result">
+      <h2>✨ Prediction Result</h2>
+
+      <p>
+        <span class="label">Predicted Category:</span>
+        {{ prediction }}
+      </p>
+
+      <p>
+        <span class="label">Confidence:</span>
+        {{ confidence }}%
+      </p>
+
+      <div class="ticket-text">{{ ticket_text }}</div>
+    </section>
+    {% endif %}
+
+    <p class="footer">
+      Built with Python, scikit-learn, FastAPI, and Jinja2.
+    </p>
+  </main>
+</body>
+</html>
