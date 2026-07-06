@@ -56,7 +56,7 @@ The priority classifier achieved **50% accuracy**, which reflects the challenge 
 
 The FastAPI web interface accepts a help desk ticket description and returns a predicted category with a confidence score.
 
-![Help Desk Ticket Classifier preview](images/app-preview.png)
+![Help Desk Ticket Classifier preview](images/apppreview.png)
 
 ## 🌸 Future Improvements
 - Expand the web app to display both category and priority predictions
